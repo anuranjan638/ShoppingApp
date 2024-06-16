@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.20.2",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.12.0"
+    },
+    "version": "1.18.2",
+    "libraryName": "shopping-app",
+    "libraryId": "9d7c572a-7eef-44d0-b374-ce8a0f5e3d9d",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "shopping-app",
+    "solutionShortDescription": "shopping-app description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

@@ -1,0 +1,85 @@
+/* Checkout.module.css */
+
+.checkout {
+    padding: 20px;
+    text-align: center;
+}
+
+.checkout h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.checkout h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.orderSummary,
+.shippingDetails {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.orderSummary ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.orderSummary li {
+    margin-bottom: 10px;
+}
+
+.orderSummary li h4 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.orderSummary li p {
+    font-size: 1em;
+    color: #666;
+}
+
+.totalAmount {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.shippingDetails form {
+    display: flex;
+    flex-direction: column;
+}
+
+.shippingDetails label {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.shippingDetails input,
+.shippingDetails textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+.shippingDetails button {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.shippingDetails button:hover {
+    background-color: #005bb5;
+}

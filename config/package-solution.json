@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "shopping-app-client-side-solution",
+    "id": "9d7c572a-7eef-44d0-b374-ce8a0f5e3d9d",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.18.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "shopping-app description"
+      },
+      "longDescription": {
+        "default": "shopping-app description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "shopping-app Feature",
+        "description": "The feature that activates elements of the shopping-app solution.",
+        "id": "4bb6ab96-6788-46ad-b9b5-46a0b0183a44",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/shopping-app.sppkg"
+  }
+}

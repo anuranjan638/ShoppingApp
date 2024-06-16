@@ -1,0 +1,38 @@
+/* ProductDetail.module.css */
+
+.productDetail {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.productDetail h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.productDetail p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.productDetail button {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.productDetail button:hover {
+    background-color: #005bb5;
+}
