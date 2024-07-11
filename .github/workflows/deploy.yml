@@ -1,0 +1,40 @@
+name: SPFx CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16.x'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build SPFx solution
+      run: |
+        gulp clean
+        gulp bundle --ship
+        gulp package-solution --ship
+
+    - name: Deploy to SharePoint App Catalog
+      env:
+        SP_USER: ${{ secrets.SP_USER }}
+        SP_PASSWORD: ${{ secrets.SP_PASSWORD }}
+        SP_TENANT: ${{ secrets.SP_TENANT }}
+        SP_APP_CATALOG_URL: ${{ secrets.SP_APP_CATALOG_URL }}
+      run: |
+        npm install -g @pnp/cli-microsoft365
+        m365 login --authType password --userName $SP_USER --password $SP_PASSWORD
+        m365 spo app add --file-path ./sharepoint/solution/your-solution.sppkg --appCatalogUrl $SP_APP_CATALOG_URL --overwrite
+        m365 spo app deploy --name your-solution.sppkg --appCatalogUrl $SP_APP_CATALOG_URL --skipFeatureDeployment
